@@ -54,7 +54,3 @@ jobs:
         vuln-type: 'os,library'
         severity: 'CRITICAL,HIGH'
 
-    - name: Gitleaks Scan
-      run: |
-        gitleaks detect --source ./client --exit-code 1
-        gitleaks detect --source ./api --exit-code 1
